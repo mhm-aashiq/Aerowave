@@ -1,0 +1,251 @@
+.fixed{
+    margin-bottom: 5%;
+}
+
+.background img{
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+.overlay-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    z-index: 10; /* Ensure text is above the background image */
+}
+
+.overlay-text .textAni h1 {
+    font-size: 35px; /* Adjust font size as needed */
+}
+
+/* Base styling for .photocut */
+.photocut {
+  width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.photocut img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.photocut article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr); /* four columns by default */
+    grid-gap: 5px;
+    mix-blend-mode: lighten;
+    padding: 15px; /* Optional: Add padding for spacing */
+}
+
+.photocut div {
+    background: black;
+    height: 22vw; /* Responsive height based on viewport width */
+}
+.col-lg-7{
+  padding-top: 10vh;
+}
+
+
+
+
+
+
+
+/* Responsive adjustments */
+
+/* Tablet devices */
+@media (max-width: 768px) {
+
+ 
+    
+    .photocut article {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(1, 1fr); /* Ensure only 2 columns are visible */
+    }
+    .photocut article div:nth-of-type(3),
+    .photocut article div:nth-of-type(4),
+    .photocut article div:nth-of-type(5) {
+        display: none; /* Hide the last 3 divs */
+    }
+
+
+    .photocut img {
+      width: 100%; /* Ensure the image takes full width */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    .photocut {
+      width: 100%; /* Ensure the container is full width */
+    }
+
+    .para1{
+      text-align: justify;
+      font-size: 15px;
+    }
+
+    .overlay-text .textAni h1 {
+      font-size: 18px; /* Adjust font size as needed */
+      visibility: hidden;
+    }
+    .col-lg-7{
+      padding-top: 10vh;
+    }
+    
+   
+ 
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+
+  .fixed{
+    margin-bottom: 10vh;
+}
+  .photocut {
+    width: 100%; /* Ensure the container is full width */
+    position: relative; /* Ensure proper positioning */
+    overflow: hidden; /* Hide any overflowing content */
+  }
+
+  .photocut img {
+    width: 100%; /* Ensure the image takes full width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default spacing around the image */
+  }
+
+  .photocut article {
+    display: none; /* Hide the article containing the divs */
+  }
+
+    .overlay-text {
+      position: absolute;
+      top: 40%;
+      z-index: 10; /* Ensure text is above the background image */
+    }
+
+    .overlay-text .textAni h1 {
+      font-size: 15px; /* Adjust font size as needed */
+      visibility: hidden;
+
+    }
+    .Head1{
+      font-size: 30px !important;
+    }
+    .para1{
+      font-size: 15px !important;
+    
+    }
+    .services{
+      padding-top: 10vh;
+    }
+    .services li {
+      margin-top: 10px;
+      text-align: justify;
+      font-size: 15px;
+      } 
+
+    .services h2{
+      padding-top: 10px;
+      color:  hsl(216, 91%, 25%);
+      font-size: 30px;
+    }
+ 
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .fixed{
+    margin-bottom: 20vh;
+  }
+
+  .background img{
+  width: 100%;
+  height: 500px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+
+  .overlay-text .textAni h1 {
+    font-size: 25px; /* Adjust font size as needed */
+  }
+  .overlay-text {
+    position: absolute;
+    top: 50vh;
+    z-index: 10; /* Ensure text is above the background image */
+  }
+ 
+
+}
+
+
+.Head1{
+
+    color: hsl(192, 78%, 49%) !important;
+    font-size: 50px;
+    font-weight: bold!important;
+    font-family: monospace;
+    letter-spacing: 7px!important;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    padding: 20px;
+    background: linear-gradient(to right, hsl(219, 12%, 61%) 0, hsl(187, 57%, 43%) 10%, hsl(216, 91%, 25%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s infinite linear;
+    position: relative; /* Add relative positioning for the pseudo-element */
+
+}
+
+.Head1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px; /* Adjust the height of the underline as needed */
+    width: 0;
+    background: aqua;
+    transition: width 0.5s ease, left 0.5s ease;
+    z-index: -1; /* Place the underline behind the text */
+
+}
+
+.Head1:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.para1{
+    text-align: justify;
+    font-size: 18px;
+
+}
+
+.services li {
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: 18px;
+    
+} 
+
+.services h2{
+  color:  hsl(216, 91%, 25%);
+  font-size: 30px;
+}
+
+

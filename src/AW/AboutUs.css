@@ -1,0 +1,133 @@
+.fixed{
+    margin-bottom: 5%;
+}
+.col-lg-4 {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px; 
+}
+
+.col-lg-4 .team-member {
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.col-lg-4 .team-member img {
+    width: 90%;
+    height: 275px;
+    border-radius: 5%;
+    margin-bottom: 25px;
+    
+}
+
+.main {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .col-sm-12 .team-member img {
+        width: 75%;
+        height: fit-content;  
+    }
+    .fixed{
+        margin-bottom: 15%;
+    }
+    .hero {
+        position: relative; 
+        width: 60%;
+        height: 200px !important;
+        background-size: cover;
+        background-position: center;
+        bottom: 0; 
+        right: 0 ; 
+    }
+    .hero-content h1 {
+        font-size: 25px !important; /* Adjust the font size here */
+    }
+
+    .col-lg-4 .team-member img {
+        width: 50%;
+        height:fit-content;
+        border-radius: 5%;
+        margin-bottom: 25px;
+        
+    }
+
+    .hero-content h1 {
+        font-size: 20px !important;
+        margin: 0;
+        text-decoration: none;
+    }
+    
+    .hero-content p {
+        font-size: 15px !important;
+        margin: 10px 0 0; 
+    }
+    .col-sm-12{
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+   
+    .col-lg-4 .team-member img {
+        width: 50%;
+        height: fit-content;
+        border-radius: 5%;
+        margin-bottom: 25px;
+        
+    
+   }
+  }
+
+.background{
+    background-color: #F0F8FF;
+}
+
+.hero {
+    position: relative; 
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+    align-items: flex-end; 
+    justify-content: center; 
+    color: white; 
+    text-align: center;
+    align-items: flex-start;  /* Align items to the top */
+    justify-content: center;  /* Center items horizontally */
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.2); 
+    padding: 20px; 
+    border-radius: 10px;
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+    width: 95%;  
+    max-width: 800px;
+
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin: 10px 0 0; 
+}
+
+
+
+
+
+
+
+

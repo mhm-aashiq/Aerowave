@@ -1,0 +1,28 @@
+/* */
+  .btn {
+    margin: 10px; /* Add spacing between buttons */
+    
+  }
+  
+  .toast-container {
+    max-width: 450px; /* Limit max width of toast */
+    width: 100%; /* Make it responsive */
+  }
+  .toast-header{
+    font-size: 15px;
+  }
+  .toast-body{
+    font-size: 13px;
+  }
+  @media (max-width: 768px) {
+    .toast-container {
+      max-width: 90%; /* Adjust width for tablets and smaller devices */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .toast-container {
+      max-width: 95%; /* Further adjustment for mobile devices */
+    }
+  }
+  

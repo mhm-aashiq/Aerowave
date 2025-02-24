@@ -1,0 +1,50 @@
+.con1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -10vh;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  h2{
+    text-align: center !important;
+  }
+
+  /* CSS for normal link */
+  .pt-3 a {
+    color: #007bff; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease, letter-spacing 0.2s ease; /* Smooth transition for color and letter-spacing */
+    letter-spacing: normal; /* Default letter spacing */
+    
+  }
+
+  /* CSS for link on hover */
+  .pt-3 a:hover {
+    color: #0056b3; /* Change link color on hover */
+    letter-spacing: 1px;
+  }
+
+  .column p{
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 15px;
+    transition: font-size 0.5s ease, color 0.5s ease; /* Smooth transition for font size and color change */
+    cursor: pointer; /* Optional: Change cursor to pointer on hover */ 
+ 
+  }
+
+  
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+   
+  }  
+
+  

@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+    .vectormap{
+        height: 350px !important;
+        width: 100%;
+    }
+}
+
+.vectormap{
+    height: 650px;
+    width: 100%;
+    
+}
+.container-map{
+    width: 100%;
+   
+}

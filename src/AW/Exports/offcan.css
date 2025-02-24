@@ -1,0 +1,91 @@
+/* General styles for the button group */
+.d-inline-flex {
+    margin-bottom: 1rem; /* Add space below the button group */
+}
+
+/* Style the buttons */
+.btn {
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+    font-size: 15px;
+    /* margin: 0px 0 0 10vh; */
+    
+}
+.mb-3{
+    margin-top: -20px;
+}
+
+.btn:hover {
+   
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Styles for the collapse card */
+.collapse {
+    margin-top: 0.3rem; /* Space between the button group and the card */
+    transition: height 0.35s ease; /* Smooth transition */
+}
+
+
+.collapse.show {
+    display: block; /* Show block when expanded */
+}
+
+.card {
+    border: 1px solid #007bff; /* Border color matching the primary button */
+    border-radius: 2rem; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.card-body {
+   
+    padding-left: 2.5rem; /* Padding inside the card body */
+    color: #212529; /* Text color */
+    width: 100%;
+    height: fit-content;
+}
+.card-body p{
+    font-size: 14px;
+    text-align: left;
+    color: white;
+}
+.Head2{
+    font-size: 17px;
+    color: hsl(192, 78%, 49%) !important;
+    font-weight: bold!important;
+    font-family: monospace;
+    letter-spacing: 7px!important;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    padding: 20px;
+    background: linear-gradient(to right, hsl(219, 92%, 51%) 0, hsl(216, 82%, 26%) 10%, hsl(0, 0%, 0%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s infinite linear;
+    position: relative; /* Add relative positioning for the pseudo-element */
+}
+
+
+/* Responsive adjustments */
+
+/* Tablet devices */
+@media (max-width: 768px) {
+
+  .card-body {
+   
+    padding-left: 1.5rem; /* Padding inside the card body */
+    color: #212529; /* Text color */
+    width: 100%;
+    height: fit-content;
+}
+.card-body p{
+    font-size: 12px;
+    
+}
+  }
+  
+  /* Mobile devices */
+  @media (max-width: 480px) {
+  
+  
+  }
