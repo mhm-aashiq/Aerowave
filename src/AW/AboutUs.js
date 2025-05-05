@@ -18,40 +18,39 @@ const AboutUs = () => {
     const Map = require('../img/map.jpg');
     const Map1 = require('../img/map1.jpg');
 
+    
+
+    // Function to select random hero content
     const [heroContent, setHeroContent] = useState({
         title: "",
         subtitle: "",
         backgroundImage: ''
     });
 
-    // Function to generate random number within a range
-    const getRandomNumber = (min, max) => {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    };
-
-    // Function to select random hero content
-    const selectRandomHeroContent = () => {
-        const titles = ["Welcome to AEROWAVE PVT LTD", "Seamless Solutions for Every Challenge", "Empowering Businesses Worldwide"];
-        const subtitles = ["Partner with us for seamless logistics solutions that drive your business forward.", "No matter the complexity, our team is here to provide you with solutions that work.", "Our innovative shipping solutions are designed to enhance your supply chain and support your growth."];
-        const backgroundImages = [Map1,king,Map]; // Update with your image filenames
-
-        const randomIndex = getRandomNumber(0, titles.length - 1);
-
-        setHeroContent({
-            title: titles[randomIndex],
-            subtitle: subtitles[randomIndex],
-            backgroundImage: backgroundImages[randomIndex]
-        });
-    };
-
     // Load random hero content on component mount
     useEffect(() => {
-        selectRandomHeroContent();
+    
+        // Function to generate random number within a range
+        const getRandomNumber = (min, max) => {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        };
+        
+            const titles = ["Welcome to AEROWAVE PVT LTD", "Seamless Solutions for Every Challenge", "Empowering Businesses Worldwide"];
+            const subtitles = ["Partner with us for seamless logistics solutions that drive your business forward.", "No matter the complexity, our team is here to provide you with solutions that work.", "Our innovative shipping solutions are designed to enhance your supply chain and support your growth."];
+            const backgroundImages = [Map1,king,Map]; // Update with your image filenames
+    
+            const randomIndex = getRandomNumber(0, titles.length - 1);
+    
+            setHeroContent({
+                title: titles[randomIndex],
+                subtitle: subtitles[randomIndex],
+                backgroundImage: backgroundImages[randomIndex]
+            });
     }, []);
     const titleStyle = {
-        color: heroContent.title === 'Discover the Future with Us' ? 'white' : 'black',
-        color: heroContent.subtitle === 'Transforming ideas into reality.' ? 'white' : 'black',
+        color: (heroContent.title === 'Discover the Future with Us' || heroContent.subtitle === 'Transforming ideas into reality.') ? 'white' : 'black'
     };
+    
     const subtitleStyle = {
          color: heroContent.subtitle === 'Transforming ideas into reality.' ? 'white' : 'black',
     };

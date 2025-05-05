@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import CarousalPage from './CarousalPage'
-import SwiperSlider from './SwiperSlider'
+// import SwiperSlider from './SwiperSlider'
 import Footer from './Footer'
 import 'bootstrap/dist/css/bootstrap.css';
 import Sections from './Sections'

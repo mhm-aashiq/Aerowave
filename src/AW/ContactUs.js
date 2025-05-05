@@ -3,7 +3,7 @@ import './ContactUs.css'; // Import the CSS file for styling
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { BsFacebook, BsInstagram, BsLinkedin, BsTwitterX } from 'react-icons/bs';
-import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit';
+// import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit';
 
 
 const ContactUs = () => {
@@ -15,6 +15,7 @@ const ContactUs = () => {
       <div className="container">
         <div className="map">
           <iframe 
+          title='Google Map'
             src="https://www.google.com/maps/embed/v1/place?q=aerowave&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" 
             width="100%" 
             height="450" 
@@ -73,13 +74,29 @@ const ContactUs = () => {
               <h1>Follow Us</h1>
               <br />
               <p>Stay connected with us through social media for the latest updates and special offers.</p>
-            <ul className="list-unstyled d-flex justify-content-center align-items-center ">
-                <li className="ms-3 "><a className="link-dark d-flex " href="#"><BsInstagram size={20} /></a></li>
-                <li className="ms-3"><a className="link-dark d-flex " href="#"><BsFacebook size={20} /></a></li>
-                <li className="ms-3"><a className="link-dark d-flex " href="#"><BsLinkedin size={20} /></a></li>
-                <li className="ms-3"><a className="link-dark d-flex " href="#"><BsTwitterX size={20} /></a></li>
-        
-            </ul>
+              <ul className="list-unstyled d-flex justify-content-center align-items-center">
+  <li className="ms-3">
+    <a className="link-dark d-flex" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+      <BsInstagram size={20} />
+    </a>
+  </li>
+  <li className="ms-3">
+    <a className="link-dark d-flex" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+      <BsFacebook size={20} />
+    </a>
+  </li>
+  <li className="ms-3">
+    <a className="link-dark d-flex" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+      <BsLinkedin size={20} />
+    </a>
+  </li>
+  <li className="ms-3">
+    <a className="link-dark d-flex" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+      <BsTwitterX size={20} />
+    </a>
+  </li>
+</ul>
+
             </div>
             <br />
             <br />
