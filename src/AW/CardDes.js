@@ -21,7 +21,7 @@ const CardDes = () => {
     event.target.style.fontSize = "15px"; // Reset font size
   };
 
-   const Maldives =  require('../img/maldives.jpg')
+  //  const Maldives =  require('../img/maldives.jpg')
    
   return (
     <div className="container con1">
@@ -46,7 +46,9 @@ const CardDes = () => {
             Explore our website to learn more about our services, industry expertise, and how AEROWAVE can help drive your business forward. Join us in redefining logistics excellence, because at AEROWAVE PVT LTD, your success is our priority.
         </p>
 
-        <p className=' pt-3'> <a><Link to="/aw/aboutus" >Learn More 🚢</Link>  </a> </p>
+        <p className="pt-3">
+  <Link to="/aw/aboutus">Learn More 🚢</Link>
+</p>
        
     <hr />
     </div>

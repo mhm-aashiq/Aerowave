@@ -35,11 +35,28 @@ const Footer = () => {
     <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
       <p>&copy; {currentYear} AEROWAVE Private Company, Inc. All rights reserved.</p>
       <ul className="list-unstyled d-flex justify-content-center align-items-center">
-      <li className="ms-3 "><a className="link-dark d-flex " onClick={handleInstagramClick}><BsInstagram size={20} /></a></li>
-            <li className="ms-3"><a className="link-dark d-flex " onClick={handleFacebookClick}><BsFacebook size={20} /></a></li>
-            <li className="ms-3"><a className="link-dark d-flex " onClick={handleLinkedinClick}><BsLinkedin size={20} /></a></li>
-            <li className="ms-3"><a className="link-dark d-flex " onClick={handleTwitterClick}><BsTwitterX size={20} /></a></li>
-          </ul>
+  <li className="ms-3">
+    <button className="link-dark d-flex border-0 bg-transparent" onClick={handleInstagramClick}>
+      <BsInstagram size={20} />
+    </button>
+  </li>
+  <li className="ms-3">
+    <button className="link-dark d-flex border-0 bg-transparent" onClick={handleFacebookClick}>
+      <BsFacebook size={20} />
+    </button>
+  </li>
+  <li className="ms-3">
+    <button className="link-dark d-flex border-0 bg-transparent" onClick={handleLinkedinClick}>
+      <BsLinkedin size={20} />
+    </button>
+  </li>
+  <li className="ms-3">
+    <button className="link-dark d-flex border-0 bg-transparent" onClick={handleTwitterClick}>
+      <BsTwitterX size={20} />
+    </button>
+  </li>
+</ul>
+
     </div>
   </footer>
 </div>
