@@ -46,6 +46,7 @@ const AboutUs = () => {
                 subtitle: subtitles[randomIndex],
                 backgroundImage: backgroundImages[randomIndex]
             });
+            // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     const titleStyle = {
         color: (heroContent.title === 'Discover the Future with Us' || heroContent.subtitle === 'Transforming ideas into reality.') ? 'white' : 'black'
