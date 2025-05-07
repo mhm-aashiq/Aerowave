@@ -62,12 +62,11 @@
     }
 
     .team-member p{
-        font-size: large;
+        font-size: 15px;
         color: red;
     }
 
     .team-member h3{
-    
         color: black;
     }
 
