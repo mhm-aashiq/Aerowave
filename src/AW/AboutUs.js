@@ -5,6 +5,7 @@ import Footer from './Footer'
 import  { useState, useEffect } from 'react';
 import WorldMap from './WorldMap';
 import { Link } from 'react-router-dom';
+import { avatar } from '@nextui-org/theme';
 
 const AboutUs = () => {
     const CEO = require('../img/Atheeq.jpg');
@@ -12,7 +13,7 @@ const AboutUs = () => {
     const CTO = require('../img/p3.jpg');
     const Sajad = require('../img/Sajad.jpg');
     const Althaf = require('../img/Althaf.jpg');
-    const king = require('../img/king.jpg');
+    const Avatar = require('../img/avatar.png');
     const Jasim = require('../img/Jasim.png');
     const Ilham = require('../img/Ilham.jpg');
     const Map = require('../img/map.jpg');
@@ -37,7 +38,7 @@ const AboutUs = () => {
         
             const titles = ["Welcome to AEROWAVE PVT LTD", "Seamless Solutions for Every Challenge", "Empowering Businesses Worldwide"];
             const subtitles = ["Partner with us for seamless logistics solutions that drive your business forward.", "No matter the complexity, our team is here to provide you with solutions that work.", "Our innovative shipping solutions are designed to enhance your supply chain and support your growth."];
-            const backgroundImages = [Map1,king,Map]; // Update with your image filenames
+            const backgroundImages = [Map1,Avatar,Map]; // Update with your image filenames
     
             const randomIndex = getRandomNumber(0, titles.length - 1);
     
@@ -73,7 +74,7 @@ const AboutUs = () => {
             <div className='container'>
                 <section className="about-us-section">
                     <h1>About Us</h1>
-                    <p>Welcome to [Company Name], where we believe in excellence and innovation. Our journey started in [Year], and since then, we have been committed to delivering top-notch services to our clients.</p>
+                    <p>Welcome to Aerowave Private Limited, where we believe in excellence and innovation. Our journey started in 2017, and since then, we have been committed to delivering top-notch services to our clients.</p>
                 </section>
 
 
@@ -90,7 +91,7 @@ const AboutUs = () => {
                 </section>
 
                 <div className='row'>
-                    <h2>Meet the Team</h2>
+                    <h2 class="center-underline">Meet the Team</h2>
                     <div className='col-lg-4 col-md-12 col-sm-12'>
                         <div className="team-members">
                             <div className="team-member">
@@ -106,7 +107,7 @@ const AboutUs = () => {
                             <div className="team-member">
                                 <img src={Ilham} alt="Ilham" style={{ transition: 'transform 0.3s ease' }} onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'} onMouseOut={(e) => e.target.style.transform = 'scale(1)'} />
                                 <h3>Mohamed Ilham</h3>
-                                <p>Documentation </p>
+                                <p>Documentation & Clearance Handling</p>
                             </div>
                         </div>
                     </div>
@@ -124,7 +125,7 @@ const AboutUs = () => {
                     <div className='col-lg-4 col-md-12 col-sm-12'>
                         <div className="team-members">
                             <div className="team-member">
-                                <img src={CTO} alt="Mohamed Jasim" style={{ transition: 'transform 0.3s ease' }} onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'} onMouseOut={(e) => e.target.style.transform = 'scale(1)'} />
+                                <img src={Avatar} alt="Mohamed Jasim" style={{ transition: 'transform 0.3s ease' }} onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'} onMouseOut={(e) => e.target.style.transform = 'scale(1)'} />
                                 <h3>Hussain Rasheed</h3>
                                 <p>Clearance Officer</p>
                             </div>
@@ -163,7 +164,7 @@ const AboutUs = () => {
 
                 <section className="contact">
                     <h2>Contact Us</h2>
-                    <p>Feel free to reach out to us at <Link href="mailto:csv@aerowavemv.com">contact@aerowave.com</Link> or call us at (+960) 944-2123.</p>
+                    <p>Feel free to reach out to us at <Link href="mailto:csv@aerowavemv.com">csv@aerowavemv.com</Link> or call us at (+960) 944-2123.</p>
                 </section>
             </div>
             <Footer />

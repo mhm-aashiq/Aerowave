@@ -33,7 +33,7 @@ const Footer = () => {
   <footer className="py-5">
 
     <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-      <p>&copy; {currentYear} AEROWAVE Private Company, Inc. All rights reserved.</p>
+      <p className='fs-6 fs-md-2'>&copy; {currentYear} AEROWAVE Private Company, Inc. All rights reserved.</p>
       <ul className="list-unstyled d-flex justify-content-center align-items-center">
   <li className="ms-3">
     <button className="link-dark d-flex border-0 bg-transparent" onClick={handleInstagramClick}>
