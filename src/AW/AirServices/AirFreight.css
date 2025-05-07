@@ -224,6 +224,13 @@
     }
   }
 
+  @media (max-width: 2560px) {
+    .overlay-text .textAni h1 {
+      font-size: 40px !important;
+      text-align: center;
+    }
+
+  }
 
   .services li {
       margin-bottom: 10px;

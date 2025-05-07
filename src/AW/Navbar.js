@@ -39,7 +39,7 @@ const Navbar = () => {
       <Container fluid>
         <Link to='/'>
           <Navbar1.Brand>
-            <img src={logo1} alt="Logo" />
+            <img src={logo1} alt="Logo" className='logo_img'/>
           </Navbar1.Brand>
         </Link>
         <Navbar1.Toggle

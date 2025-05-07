@@ -69,7 +69,14 @@
 
 @media (max-width: 480px) {
   .button {
-    font-size: 4rem; /* Even smaller font for very small screens */
+    font-size: 10vw; /* Even smaller font for very small screens */
     padding: 5px 10px;
+  }
+}
+
+@media (max-width: 2560px) {
+  h1{
+    padding-bottom: 8%;
+    padding-top: 8%;
   }
 }

@@ -48,7 +48,7 @@ const OffcanvasExample = () => {
   return (
     <div className=''>
     {/* fast delivery */}
-      <Button variant="primary" size='lg' onClick={handleShowDelivery} className='m-2 fs-4'>
+      <Button variant="primary" size='sm' onClick={handleShowDelivery} className='m-2 fs-4'>
         Fast Delivery 
       </Button>
       <Offcanvas show={showDelivery} onHide={handleCloseDelivery} placement="start">
@@ -66,7 +66,7 @@ const OffcanvasExample = () => {
       </Offcanvas>
 
     {/*  Global Reach */}
-      <Button variant="success" size='lg' onClick={handleShowGlobal} className='m-2 fs-4'>
+      <Button variant="success" size='sm' onClick={handleShowGlobal} className='m-2 fs-4'>
         Global Reach 
       </Button>
       <Offcanvas show={showGlobal} onHide={handleCloseGlobal} placement="start">
@@ -85,7 +85,7 @@ const OffcanvasExample = () => {
 
 
       {/*  Reliable Scheduling */}
-      <Button variant="secondary" size='lg' onClick={handleShowScheduling} className='m-2 fs-4'>
+      <Button variant="secondary" size='sm' onClick={handleShowScheduling} className='m-2 fs-4'>
         Reliable Scheduling 
       </Button>
       <Offcanvas show={showScheduling} onHide={handleCloseScheduling} placement="start">
@@ -103,7 +103,7 @@ const OffcanvasExample = () => {
 
 
       {/*  High Security */}
-      <Button variant="danger" size='lg' onClick={handleShowSecurity} className='m-2 fs-4'>
+      <Button variant="danger" size='sm' onClick={handleShowSecurity} className='m-2 fs-4'>
         High Security 
       </Button>
       <Offcanvas show={showSecurity} onHide={handleCloseSecurity} placement="start">
@@ -122,7 +122,7 @@ const OffcanvasExample = () => {
 
 
       {/*  Temperature Control */}
-      <Button variant="warning" size='lg' onClick={handleShowTemperature} className='m-2 fs-4'>
+      <Button variant="warning" size='sm' onClick={handleShowTemperature} className='m-2 fs-4'>
         Temperature Control 
       </Button>
       <Offcanvas show={showTemperature} onHide={handleCloseTemperature} placement="start">
@@ -140,7 +140,7 @@ const OffcanvasExample = () => {
 
 
       {/*  Real-Time Tracking */}
-      <Button variant="info" size='lg' onClick={handleShowTracking} className='m-2 fs-4'>
+      <Button variant="info" size='sm' onClick={handleShowTracking} className='m-2 fs-4'>
         Real-Time Tracking 
       </Button>
       <Offcanvas show={showTracking} onHide={handleCloseTracking} placement="start">
@@ -158,7 +158,7 @@ const OffcanvasExample = () => {
 
 
       {/*  Customs Clearance */}
-      <Button variant="dark" size='lg' onClick={handleShowClearance} className='m-2 fs-4'>
+      <Button variant="dark" size='sm' onClick={handleShowClearance} className='m-2 fs-4'>
         Customs Clearance 
       </Button>
       <Offcanvas show={showClearance} onHide={handleCloseClearance} placement="start">
@@ -177,7 +177,7 @@ const OffcanvasExample = () => {
 
 
       {/*  Flexibility */}
-      <Button variant="primary" size='lg' onClick={handleShowFlexibility} className='m-2 fs-4'>
+      <Button variant="primary" size='sm' onClick={handleShowFlexibility} className='m-2 fs-4'>
         Flexibility 
       </Button>
       <Offcanvas show={showFlexibility} onHide={handleCloseFlexibility} placement="start">
@@ -195,7 +195,7 @@ const OffcanvasExample = () => {
 
 
       {/*  Express Services */}
-      <Button variant="danger" size='lg' onClick={handleShowExpress} className='m-2 fs-4'>
+      <Button variant="danger" size='sm' onClick={handleShowExpress} className='m-2 fs-4'>
         Express Services 
       </Button>
       <Offcanvas show={showExpress} onHide={handleCloseExpress} placement="start">
@@ -213,7 +213,7 @@ const OffcanvasExample = () => {
 
 
          {/*  Door-to-Door */}
-         <Button variant="success" size='lg' onClick={handleShowDoor} className='m-2 fs-4'>
+         <Button variant="success" size='sm' onClick={handleShowDoor} className='m-2 fs-4'>
         Door-to-Door 
       </Button>
       <Offcanvas show={showDoor} onHide={handleCloseDoor} placement="start">
