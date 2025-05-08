@@ -5,12 +5,12 @@ import Footer from './Footer'
 import  { useState, useEffect } from 'react';
 import WorldMap from './WorldMap';
 import { Link } from 'react-router-dom';
-import { avatar } from '@nextui-org/theme';
+
 
 const AboutUs = () => {
     const CEO = require('../img/Atheeq.jpg');
     const Gayan = require('../img/Gayan.jpg');
-    const CTO = require('../img/p3.jpg');
+
     const Sajad = require('../img/Sajad.jpg');
     const Althaf = require('../img/Althaf.jpg');
     const Avatar = require('../img/avatar.png');
