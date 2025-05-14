@@ -3,6 +3,7 @@
 @media only screen and (max-width: 768px) {
   .map{
         width: 100%; 
+      
     }
   }
 
@@ -19,7 +20,7 @@ iframe{
   text-align: justify;
 }
 .row{
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .faq p{
@@ -62,5 +63,38 @@ h1{
   }
 }
   
+
+@media (max-width: 480px) {
+  .textAni{
+    color: hsl(0, 0%, 28%);
+    
+    font-weight: bold!important;
+    font-family: monospace;
+    letter-spacing: 7px!important;
+    cursor: pointer;
+    text-transform: uppercase;
+  
+    padding: 3%;
+    background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s infinite linear;
+  }
+
+  .textAni h1{
+    font-size: 22px;
+  }
+
+  .col-lg-6 h1{
+    font-size: 25px;
+    text-align: center;
+    padding: 0%;
+  }
+
+  .end{
+    
+    margin-top: 30vh;
+  }
+}
  
   

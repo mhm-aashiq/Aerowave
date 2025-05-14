@@ -41,7 +41,7 @@ const CarousalPage = () => {
         <Carousel.Caption className="custom-caption">
           <h5>Optimize, streamline, accelerate</h5>
           <p>
-           Integrating advanced technologies and optimizing processes, we enhance coordination, reduce costs, and accelerate delivery times. Our approach ensures a smooth, agile supply chain that adapts to your needs and drives overall business success. </p>
+           Integrating advanced technologies - optimizing processes, enhance coordination, reduce costs, and accelerate delivery times. Our approach ensures a smooth, agile supply chain that adapts customers and drives overall business success. </p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

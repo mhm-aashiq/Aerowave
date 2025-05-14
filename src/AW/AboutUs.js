@@ -38,7 +38,7 @@ const AboutUs = () => {
         
             const titles = ["Welcome to AEROWAVE PVT LTD", "Seamless Solutions for Every Challenge", "Empowering Businesses Worldwide"];
             const subtitles = ["Partner with us for seamless logistics solutions that drive your business forward.", "No matter the complexity, our team is here to provide you with solutions that work.", "Our innovative shipping solutions are designed to enhance your supply chain and support your growth."];
-            const backgroundImages = [Map1,Avatar,Map]; // Update with your image filenames
+            const backgroundImages = [Map1,Map]; // Update with your image filenames
     
             const randomIndex = getRandomNumber(0, titles.length - 1);
     

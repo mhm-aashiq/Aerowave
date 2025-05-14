@@ -1,16 +1,17 @@
 
 .navbar-brand img {
+  
   width: 50px;
   max-height: 50px;
 }
 .navbar-brand,
 .navbar-nav .nav-link {
-  color: white !important; /* Text color */
+  color: aqua !important; /* Text color */
   position: relative; /* Set position to relative */
   z-index: 1000; /* Bring text to the front */
   font-size: 15px;
   background-color: rgb(7, 2, 34);
-  margin-right: 25px;
+  margin-right: 30px;
   
 }
 
@@ -33,11 +34,38 @@
 }
 
 .navbar-toggler-icon {
-  background-color: aqua; /* Navbar toggle icon color */
-  border-color: aqua;
-  color: aliceblue;
+  background-image: none; /* Remove default Bootstrap hamburger icon */
+  width: 30px;
+  height: 10px;
+  position: relative;
   
 }
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon span {
+  content: '';
+  background-color: aqua;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  transition: 0.3s;
+  border-radius: 1px;
+}
+
+.navbar-toggler-icon::before {
+  top: 2px;
+}
+
+.navbar-toggler-icon span {
+  top: 14px;
+}
+
+.navbar-toggler-icon::after {
+  bottom: 2px;
+}
+
 
 .navbar-toggler {
   border-color: white; /* Navbar toggle border color */
@@ -47,6 +75,7 @@
 .bg-body-dark {
   height: 80px;
   background-color: rgb(7, 2, 34);
+  width: 100%;
 }
 
 
@@ -96,6 +125,7 @@
   .navbar-brand .logo_img {
     width: 20px;
     max-height: 40px ;
+    margin-left: 10px;
     
   }
   .bg-body-dark {
@@ -117,6 +147,14 @@
     height: 60px;
     background-color: rgb(7, 2, 34);
   }
+
+  .navbar-brand,
+.navbar-nav .nav-link {
+  
+  margin-right: 0px;
+  border-radius: 10px;
+  
+}
 
 }
 

@@ -1,9 +1,8 @@
 import React from 'react';
-import './ContactUs.css'; // Import the CSS file for styling
+import './ContactUs.css'; 
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { BsFacebook, BsInstagram, BsLinkedin, BsTwitterX } from 'react-icons/bs';
-// import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit';
 
 
 const ContactUs = () => {
@@ -16,7 +15,7 @@ const ContactUs = () => {
         <div className="map">
           <iframe 
           title='Google Map'
-            src="https://www.google.com/maps/embed/v1/place?q=aerowave&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" 
+            src="https://maps.google.com/maps?q=aerowave+maldives&output=embed" 
             width="100%" 
             height="450" 
             frameBorder="0" 
@@ -69,10 +68,11 @@ const ContactUs = () => {
                 </div>
             </div>
           </div>
-          <div className='col-lg-6 col-md-12 col-sm-12'>
+          <div className='col-lg-6 col-md-12 col-sm-12 end'>
+           
             <div className="follow-us">
               <h1>Follow Us</h1>
-              <br />
+             
               <p>Stay connected with us through social media for the latest updates and special offers.</p>
               <ul className="list-unstyled d-flex justify-content-center align-items-center">
   <li className="ms-3">

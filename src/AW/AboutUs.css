@@ -15,10 +15,13 @@
 }
 
 .col-lg-4 .team-member img {
-    width: 90%;
+    width: 65%;
     height: 275px;
     border-radius: 5%;
     margin-bottom: 25px;
+    border-top: solid black 1px;
+    border-left: solid black 1px;
+  
     
 }
 .center-underline {
@@ -34,9 +37,9 @@
 
 
 
-@media (max-width: 425px) {
+@media (max-width: 480px) {
     .col-sm-12 .team-member img {
-        width: 75%;
+        width: 55%;
         height: 200px;  
     }
     .fixed{

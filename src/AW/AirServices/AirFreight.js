@@ -47,19 +47,17 @@ const AirFreight = () => {
             </section>
           </div>
 
-          <div className='col-lg-5 col-md-6 col-sm-12'>
+          <div className='col-lg-4 col-md-6 col-sm-6'>
             <ul className="services">
               <h2>Our Services</h2>
               <hr />
                 <div><OffcanvasExample /></div>
-              
-            
             </ul>
           </div>
+    
+         </div>
         </div>
       <Footer />
-
-      </div>
       </main>
 
     </div>

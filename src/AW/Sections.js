@@ -86,9 +86,9 @@ const Sections = () => {
 				<span></span>
 			</div>
 			<div className="tags">
-				<span className="tag yellow">Convenient</span>
+				<span className="tag yellow">Convenient way</span>
 				<span className="tag">Time saving</span>
-				<span className="tag blue">Any kind of items</span>
+				<span className="tag blue">varieties of items</span>
 			</div>
 			<p className="desc">
 			This service typically includes pick-up, transportation, and final delivery, making it convenient for both senders and recipients.			</p>

@@ -44,7 +44,22 @@
     .container {
       flex-direction: column; /* Stack columns vertically on smaller screens */
     }
+
+    .mt-3 p{
+      font-size: 15px;
+    }
    
   }  
 
+
+  @media (max-width: 425px) {
+    .container {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+
+    .mt-3 p{
+      font-size: 12px;
+    }
+   
+  }  
   

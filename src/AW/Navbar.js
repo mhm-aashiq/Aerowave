@@ -43,12 +43,15 @@ const Navbar = () => {
           </Navbar1.Brand>
         </Link>
         <Navbar1.Toggle
-          aria-controls="navbarScroll"
-          onClick={toggleNavbar}
-          className={`custom-toggler ${expanded ? 'collapsed' : ''}`}
-        >
-          <span className="navbar-toggler-icon"></span>
-        </Navbar1.Toggle>
+            aria-controls="navbarScroll"
+            onClick={toggleNavbar}
+            className={`custom-toggler ${expanded ? 'collapsed' : ''}`}
+          >
+            <span className="navbar-toggler-icon">
+              <span></span> {/* Needed for middle line */}
+            </span>
+          </Navbar1.Toggle>
+
         <Navbar1.Collapse id="navbarScroll" className={`${expanded ? 'show' : ''}`}>
           <Nav className="ms-auto my-2 my-lg-0"  navbarScroll>
           <Link to='/' className="nav-link text-white">Home</Link>
