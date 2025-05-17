@@ -25,7 +25,7 @@ const AirFreight = () => {
       <main className="content">
         <h1 className='Head1'>AW Exports</h1>
         <div className='container'>
-          <p className='para1'>
+          <p className='para4'>
             We specialize in seamless export shipments by both air and sea, ensuring that your goods reach international markets efficiently and securely. Our dedicated team understands the complexities of global logistics and is committed to providing tailored solutions that meet your unique needs. Whether you require expedited air freight for time-sensitive cargo or cost-effective sea freight for bulk shipments, we handle every aspect of the process, from documentation and customs clearance to real-time tracking and delivery. With our extensive network of trusted carriers and freight partners, you can rest assured that your shipments will arrive on time and in perfect condition.
           </p>
 
@@ -43,17 +43,18 @@ const AirFreight = () => {
               </section>
             </div>
 
-            <div className='col-lg-5 col-md-6 col-sm-12'>
+            <div className='col-lg-4 col-md-6 col-sm-6'>
               <ul className="services">
                 <h2>Our Services</h2>
                 <hr />
                 <div><OffcanvasExample /></div>
               </ul>
-            </div>
           </div>
+    
+         </div>
         </div>
+      <Footer />
       </main>
-      <div className='footer'> <Footer /> </div>
     </div>
   );
 }

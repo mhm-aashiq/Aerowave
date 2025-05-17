@@ -71,3 +71,12 @@
   z-index: 1;
   display: inline-block;
 }
+
+  @media (max-width: 425px) {
+  .gallery-item .overlay{
+    font-size: 12px;
+    overflow: hidden;
+    
+  }
+   
+  }  

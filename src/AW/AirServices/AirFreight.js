@@ -29,7 +29,7 @@ const AirFreight = () => {
       <main className="content">
         <h1 className='Head1'>Air Cargo</h1>
       <div className='container'>
-          <p className='para1'>
+          <p className='para3'>
             Airfreight, or air cargo, is a fast and efficient method for transporting goods and materials via aircraft. Ideal for time-sensitive and high-value shipments, airfreight offers rapid delivery across international borders, making it crucial for industries like electronics, pharmaceuticals, and perishables. Although more costly than sea or land transport, its speed and reliability often make it the preferred choice for meeting tight deadlines and responding quickly to market demands. Airfreight ensures that your cargo reaches its destination swiftly and securely, maintaining the flow of global trade.
           </p>
 

@@ -55,9 +55,6 @@
   height: 22vw; /* Responsive height based on viewport width */
 }
 
-/* .row{
-  height: 800px;
-} */
 
 
 
@@ -88,7 +85,7 @@
     width: 100%; /* Ensure the container is full width */
   }
 
-  .para1{
+  .para3{
     text-align: justify;
     font-size: 15px;
   }
@@ -140,18 +137,18 @@
   .Head1{
     font-size: 30px !important;
   }
-  .para1{
-    font-size: 15px !important;
+  .para3{
+    font-size: 13px !important;
   
   }
   .services{
-    padding-top: 10vh;
+    /* padding-top: 10vh; */
   }
-  .services li {
+  /* .services li {
     margin-top: 10px;
     text-align: justify;
     font-size: 15px;
-    } 
+    }  */
 
   .services h2{
     padding-top: 10px;
@@ -200,7 +197,7 @@
   left: 0;
 }
 
-.para1{
+.para3{
   text-align: justify;
   font-size: 18px;
  

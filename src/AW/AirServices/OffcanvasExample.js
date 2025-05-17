@@ -50,84 +50,91 @@ const OffcanvasExample = () => {
   return (
     <div className=''>
        <style>
-{`
-  /* General Offcanvas Half-Cut Style */
-  .offcanvas-start.half-cut::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
+          {`
+            /* General Offcanvas Half-Cut Style */
+            .offcanvas-start.half-cut::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              z-index: -1;
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+              border-top-left-radius: 10px;
+              border-bottom-left-radius: 10px;
+              text-align: justify;
+            }
 
-  .offcanvas-start.half-cut {
+            .offcanvas-start.half-cut {
 
-    overflow: hidden;
-  }
+              overflow: hidden;
+            }
 
-  /* Variant backgrounds */
-  .offcanvas-start.bg-primary.half-cut::before {
-    background: linear-gradient(to bottom right, #0d6efd 50%,rgb(100, 162, 255) 50%);
-  }
+            /* Variant backgrounds */
+            .offcanvas-start.bg-primary.half-cut::before {
+              background: linear-gradient(to bottom right, #0d6efd 50%,rgb(100, 162, 255) 50%);
+            }
 
-  .offcanvas-start.bg-success.half-cut::before {
-    background: linear-gradient(to bottom right, #198754 50%,rgb(97, 167, 134) 50%);
-  }
+            .offcanvas-start.bg-success.half-cut::before {
+              background: linear-gradient(to bottom right, #198754 50%,rgb(97, 167, 134) 50%);
+            }
 
-  .offcanvas-start.bg-danger.half-cut::before {
-    background: linear-gradient(to bottom right, #dc3545 50%,rgb(218, 112, 122) 50%);
-  }
+            .offcanvas-start.bg-danger.half-cut::before {
+              background: linear-gradient(to bottom right, #dc3545 50%,rgb(218, 112, 122) 50%);
+            }
 
-  .offcanvas-start.bg-warning.half-cut::before {
-    background: linear-gradient(to bottom right, #ffc107 50%,rgb(255, 213, 86) 50%);
-  }
+            .offcanvas-start.bg-warning.half-cut::before {
+              background: linear-gradient(to bottom right, #ffc107 50%,rgb(255, 213, 86) 50%);
+            }
 
-  .offcanvas-start.bg-info.half-cut::before {
-    background: linear-gradient(to bottom right, #0dcaf0 50%,rgb(74, 214, 241) 50%);
-  }
+            .offcanvas-start.bg-info.half-cut::before {
+              background: linear-gradient(to bottom right, #0dcaf0 50%,rgb(74, 214, 241) 50%);
+            }
 
-  .offcanvas-start.bg-secondary.half-cut::before {
-    background: linear-gradient(to bottom right, #6c757d 50%,rgb(143, 155, 165) 50%);
-  }
+            .offcanvas-start.bg-secondary.half-cut::before {
+              background: linear-gradient(to bottom right, #6c757d 50%,rgb(143, 155, 165) 50%);
+            }
 
-  .offcanvas-start.bg-dark.half-cut::before {
-    background: linear-gradient(to bottom right, #212529 50%,rgb(49, 51, 54) 50%);
-  }
+            .offcanvas-start.bg-dark.half-cut::before {
+              background: linear-gradient(to bottom right, #212529 50%,rgb(49, 51, 54) 50%);
+            }
 
-  /* Optional content styles inside the offcanvas */
-  .offcanvas-title {
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-  }
+            /* Optional content styles inside the offcanvas */
+            .offcanvas-title {
+              font-weight: bold;
+              text-transform: uppercase;
+              font-size: 1.5rem;
+              
+            }
 
-  .offcanvas-body div {
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    line-height: 1.6;
-  }
+            .offcanvas-body div {
+              font-size: 1.1rem;
+              text-transform: uppercase;
+              font-weight: 500;
+              line-height: 1.6;
+              text-align: justify;
+            }
 
-  .offcanvas .btn a {
-    text-decoration: none;
-  }
+            .offcanvas .btn a {
+              text-decoration: none;
+            }
 
-  .offcanvas .btn a:hover {
-    text-decoration: underline;
-  }
-`}
-</style>
+            .offcanvas .btn a:hover {
+              text-decoration: underline;
+            }
+          .custom-offcanvas-header .btn-close {
+            background-color:white;
+            margin-bottom:10px;
+          }
+          `}
+        </style>
 
 
 
 
     {/* fast delivery */}
-       <Button variant="primary" size="sm" onClick={handleShowDelivery}  className="m-2 fs-5" >
+       <Button variant="primary" size="sm" onClick={handleShowDelivery}  className="m-2 fs-6" >
         Fast Delivery
       </Button>
 
@@ -137,14 +144,14 @@ const OffcanvasExample = () => {
         placement="start"
         className="bg-primary half-cut"
       >
-        <Offcanvas.Header closeButton>
+        <Offcanvas.Header closeButton className="custom-offcanvas-header">
           <Offcanvas.Title className="text-uppercase fs-6 fw-bold text-white">
             Fast Delivery
             <hr className="bg-light" />
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <div className="text-uppercase text-white fs-6">
+          <div className="text-uppercase text-white fs-6 ">
             Airfreight provides the quickest shipping option, significantly reducing transit times compared to sea or land transport.
           </div>
           <Button className="mt-3" variant="light" size="sm">
@@ -156,11 +163,11 @@ const OffcanvasExample = () => {
       </Offcanvas>
 
     {/*  Global Reach */}
-      <Button variant="success" size='sm' onClick={handleShowGlobal} className='m-2 fs-5'>
+      <Button variant="success" size='sm' onClick={handleShowGlobal} className='m-2 fs-6'>
         Global Reach 
       </Button>
       <Offcanvas show={showGlobal} onHide={handleCloseGlobal} placement="start" className="bg-success half-cut">
-        <Offcanvas.Header closeButton>
+        <Offcanvas.Header closeButton className="custom-offcanvas-header">
           <Offcanvas.Title className='text-uppercase fs-6 text-white'>Global Reach <hr className="bg-light" /></Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
@@ -175,11 +182,11 @@ const OffcanvasExample = () => {
 
 
       {/*  Reliable Scheduling */}
-      <Button variant="secondary" size='sm' onClick={handleShowScheduling} className='m-2 fs-5'>
+      <Button variant="secondary" size='sm' onClick={handleShowScheduling} className='m-2 fs-6'>
         Reliable Scheduling 
       </Button>
       <Offcanvas show={showScheduling} onHide={handleCloseScheduling} placement="start" className="bg-secondary half-cut">
-        <Offcanvas.Header closeButton>
+        <Offcanvas.Header closeButton className="custom-offcanvas-header">
           <Offcanvas.Title className='text-uppercase text-white fw-bold fs-6'>Reliable Scheduling  <hr className="bg-light" /></Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
@@ -193,11 +200,11 @@ const OffcanvasExample = () => {
 
 
       {/*  High Security */}
-      <Button variant="danger" size='sm' onClick={handleShowSecurity} className='m-2 fs-5'>
+      <Button variant="danger" size='sm' onClick={handleShowSecurity} className='m-2 fs-6'>
         High Security 
       </Button>
       <Offcanvas show={showSecurity} onHide={handleCloseSecurity} placement="start"  className="bg-danger half-cut">
-        <Offcanvas.Header closeButton>
+        <Offcanvas.Header closeButton className="custom-offcanvas-header">
           <Offcanvas.Title className='text-uppercase text-white fw-bold fs-6'>High Security<hr className="bg-light"/></Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
@@ -212,11 +219,11 @@ const OffcanvasExample = () => {
 
 
       {/*  Temperature Control */}
-      <Button variant="warning" size='sm' onClick={handleShowTemperature} className='m-2 fs-5'>
+      <Button variant="warning" size='sm' onClick={handleShowTemperature} className='m-2 fs-6'>
         Temperature Control 
       </Button>
       <Offcanvas show={showTemperature} onHide={handleCloseTemperature} placement="start" className="bg-warning half-cut"> 
-        <Offcanvas.Header closeButton>
+        <Offcanvas.Header closeButton className="custom-offcanvas-header">
           <Offcanvas.Title className='text-uppercase text-white fw-bold fs-6'>Temperature Control <hr className="bg-light"/></Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
@@ -230,11 +237,11 @@ const OffcanvasExample = () => {
 
 
       {/*  Real-Time Tracking */}
-      <Button variant="info" size='sm' onClick={handleShowTracking} className='m-2 fs-5'>
+      <Button variant="info" size='sm' onClick={handleShowTracking} className='m-2 fs-6'>
         Real-Time Tracking 
       </Button>
       <Offcanvas show={showTracking} onHide={handleCloseTracking} placement="start" className="bg-info half-cut">
-        <Offcanvas.Header closeButton>
+        <Offcanvas.Header closeButton className="custom-offcanvas-header">
           <Offcanvas.Title className='text-uppercase text-white fw-bold fs-6'>Real-Time Tracking <hr className="bg-light"/></Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
@@ -248,11 +255,11 @@ const OffcanvasExample = () => {
 
 
       {/*  Customs Clearance */}
-      <Button variant="dark" size='sm' onClick={handleShowClearance} className='m-2 fs-5'>
+      <Button variant="dark" size='sm' onClick={handleShowClearance} className='m-2 fs-6'>
         Customs Clearance 
       </Button>
       <Offcanvas show={showClearance} onHide={handleCloseClearance} placement="start" className="bg-dark half-cut">
-        <Offcanvas.Header closeButton>
+        <Offcanvas.Header closeButton className="custom-offcanvas-header">
           <Offcanvas.Title className='text-uppercase text-white fw-bold fs-6'>Customs Clearance<hr className="bg-light"/></Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
@@ -267,11 +274,11 @@ const OffcanvasExample = () => {
 
 
       {/*  Flexibility */}
-      <Button variant="primary" size='sm' onClick={handleShowFlexibility} className='m-2 fs-5'>
+      <Button variant="primary" size='sm' onClick={handleShowFlexibility} className='m-2 fs-6'>
         Flexibility 
       </Button>
       <Offcanvas show={showFlexibility} onHide={handleCloseFlexibility} placement="start" className="bg-primary half-cut">
-        <Offcanvas.Header closeButton>
+        <Offcanvas.Header closeButton className="custom-offcanvas-header">
           <Offcanvas.Title className='text-uppercase text-white fw-bold fs-6'>Flexibility <hr className="bg-light"/></Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
@@ -285,11 +292,11 @@ const OffcanvasExample = () => {
 
 
       {/*  Express Services */}
-      <Button variant="danger" size='sm' onClick={handleShowExpress} className='m-2 fs-5'>
+      <Button variant="danger" size='sm' onClick={handleShowExpress} className='m-2 fs-6'>
         Express Services 
       </Button>
       <Offcanvas show={showExpress} onHide={handleCloseExpress} placement="start" className="bg-danger half-cut">
-        <Offcanvas.Header closeButton>
+        <Offcanvas.Header closeButton className="custom-offcanvas-header">
           <Offcanvas.Title className='text-uppercase text-white fw-bold fs-6'>Express Services<hr className="bg-light"/></Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
@@ -303,11 +310,11 @@ const OffcanvasExample = () => {
 
 
          {/*  Door-to-Door */}
-         <Button variant="success" size='sm' onClick={handleShowDoor} className='m-2 fs-5'>
+         <Button variant="success" size='sm' onClick={handleShowDoor} className='m-2 fs-6'>
         Door-to-Door 
       </Button>
       <Offcanvas show={showDoor} onHide={handleCloseDoor} placement="start" className="bg-success half-cut">
-        <Offcanvas.Header closeButton>
+        <Offcanvas.Header closeButton className="custom-offcanvas-header">
           <Offcanvas.Title className='text-uppercase text-white fw-bold fs-6'>Door-to-Door<hr className="bg-light"/></Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>

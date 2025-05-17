@@ -34,7 +34,7 @@ const OffcanvasExample = () => {
           </div>
 
           <div className='row'>
-              <div className='col '>
+              <div className='col'>
                   <div className={`collapse ${openCollapse ? 'show' : ''}`} id="collapseExample">
                       <div className="card card-body bg-dark">
                           {openCollapse === 'collapseExample1' && (
