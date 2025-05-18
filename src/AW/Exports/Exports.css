@@ -131,24 +131,24 @@
         font-size: 30px !important;
         }
       .para4{
-        font-size: 13px !important;
+        font-size: 15px !important;
       
         }
       .services{
-        /* padding-top: 10vh; */
+        
         height: auto;
-        margin-top: -75px;
+       
         }
       .services li {
-        /* margin-top: 10px; */
+    
         text-align: justify;
         font-size: 15px;
         } 
 
       .services h2{
-        /* padding-top: 10px; */
+ 
         color:  hsl(216, 91%, 25%);
-        font-size: 30px;
+     
         }
 
      

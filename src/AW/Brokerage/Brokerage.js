@@ -24,11 +24,11 @@ const Brokerage = () => {
       <main className="content">
         <h1 className='Head1'>AW Brokerage</h1>
         <div className='container'>
-          <p className='para1'>
+          <p className='para8'>
           Our shipping and logistics service specializes in customs brokerage, ensuring seamless import and export processes for businesses. We handle all aspects of customs clearance, including documentation, tariff classification, and compliance with local and international regulations. Our experienced team navigates complex customs procedures, minimizing delays and optimizing costs. By leveraging our extensive network and expertise, we provide efficient solutions tailored to meet the specific needs of our clients, ensuring timely delivery and enhanced supply chain efficiency          </p>
 
           <div className='row'>
-            <div className='col-lg-7 col-md-6 col-sm-12'>
+            <div className='col-lg-7 col-md-6 col-sm-11'>
               <section className='photocut'>
                 <img src={brokerage} alt="Air Cargo" />
                
@@ -45,7 +45,7 @@ const Brokerage = () => {
           </div>
         </div>
       </main>
-      <div className='footer'> <Footer /> </div>
+   <Footer />
     </div>
   );
 }

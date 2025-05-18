@@ -12,7 +12,7 @@
 .overlay-text {
     position: absolute;
     top: 80%;
-    left: 50%;
+    /* left: 50%; */
     transform: translate(-50%, -50%);
     text-align: end; 
     z-index: 10; /* Ensure text is above the background image */
@@ -48,6 +48,48 @@
 }
 
 
+.Head1{
+
+  color: hsl(192, 78%, 49%) !important;
+  font-size: 50px;
+  font-weight: bold!important;
+  font-family: monospace;
+  letter-spacing: 7px!important;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  padding: 20px;
+  background: linear-gradient(to right, hsl(219, 12%, 61%) 0, hsl(187, 57%, 43%) 10%, hsl(216, 91%, 25%) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite linear;
+  position: relative; /* Add relative positioning for the pseudo-element */
+
+}
+
+.Head1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px; /* Adjust the height of the underline as needed */
+  width: 0;
+  background: aqua;
+  transition: width 0.5s ease, left 0.5s ease;
+  z-index: -1; /* Place the underline behind the text */
+  
+}
+
+.Head1:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.para7{
+  text-align: justify;
+  font-size: 18px;
+ 
+}
 
 
 
@@ -86,7 +128,7 @@
     width: 100%; /* Ensure the container is full width */
   }
 
-  .para1{
+  .para7{
     text-align: justify;
     font-size: 14px;
   }
@@ -95,7 +137,7 @@
     padding-top: 10vh;
   }
   .overlay-text .textAni h1 {
-    font-size: 15px; /* Adjust font size as needed */
+   
     visibility: hidden;
 
   }
@@ -106,9 +148,7 @@
 /* Mobile devices */
 @media (max-width: 480px) {
 
-    .fixed{
-      margin-bottom: 10vh;
-    }
+  
 
     .background img{
       width: 100%;
@@ -144,7 +184,7 @@
   .Head1{
     font-size: 25px !important;
     }
-  .para1{
+  .para7{
     font-size: 15px !important;
   
     }
@@ -163,62 +203,12 @@
     /* padding-top: 10px; */
     color:  hsl(216, 91%, 25%);
     font-size: 30px;
+    padding-top: 10vh;
     }
 
-    .footer{
-      margin-top: 20vh;
-    }
-    .overlay-text .textAni h1 {
-      font-size: 15px; /* Adjust font size as needed */
-      visibility: hidden;
-    
+
 
 }
-
-}
-.Head1{
-
-  color: hsl(192, 78%, 49%) !important;
-  font-size: 50px;
-  font-weight: bold!important;
-  font-family: monospace;
-  letter-spacing: 7px!important;
-  cursor: pointer;
-  text-transform: uppercase;
-
-  padding: 20px;
-  background: linear-gradient(to right, hsl(219, 12%, 61%) 0, hsl(187, 57%, 43%) 10%, hsl(216, 91%, 25%) 20%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 5s infinite linear;
-  position: relative; /* Add relative positioning for the pseudo-element */
-
-}
-
-.Head1::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 4px; /* Adjust the height of the underline as needed */
-  width: 0;
-  background: aqua;
-  transition: width 0.5s ease, left 0.5s ease;
-  z-index: -1; /* Place the underline behind the text */
-  
-}
-
-.Head1:hover::after {
-  width: 100%;
-  left: 0;
-}
-
-.para1{
-  text-align: justify;
-  font-size: 18px;
- 
-}
-
 
 
 

@@ -54,6 +54,51 @@
 
 
 
+.Head1{
+
+  color: hsl(192, 78%, 49%) !important;
+  font-size: 50px;
+  font-weight: bold!important;
+  font-family: monospace;
+  letter-spacing: 7px!important;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  padding: 20px;
+  background: linear-gradient(to right, hsl(219, 12%, 61%) 0, hsl(187, 57%, 43%) 10%, hsl(216, 91%, 25%) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite linear;
+  position: relative; /* Add relative positioning for the pseudo-element */
+
+}
+
+.Head1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px; /* Adjust the height of the underline as needed */
+  width: 0;
+  background: aqua;
+  transition: width 0.5s ease, left 0.5s ease;
+  z-index: -1; /* Place the underline behind the text */
+  
+}
+
+.Head1:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.para8{
+  text-align: justify;
+  font-size: 18px;
+ 
+}
+
+
+
 
 
 /* Responsive adjustments */
@@ -95,9 +140,9 @@
     width: 100%; /* Ensure the container is full width */
   }
 
-  .para1{
+  .para8{
     text-align: justify;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .overlay-text .textAni h1 {
@@ -156,7 +201,7 @@
   .Head1{
     font-size: 25px !important;
     }
-  .para1{
+  .para8{
     font-size: 15px !important;
   
     }
@@ -177,9 +222,7 @@
     font-size: 30px;
     }
 
-    .footer{
-      margin-top: 20vh;
-    }
+
 
     .extra,.extra1 {
       /* Your styles here */
@@ -191,51 +234,6 @@
 
 
   
-
-.Head1{
-
-  color: hsl(192, 78%, 49%) !important;
-  font-size: 50px;
-  font-weight: bold!important;
-  font-family: monospace;
-  letter-spacing: 7px!important;
-  cursor: pointer;
-  text-transform: uppercase;
-
-  padding: 20px;
-  background: linear-gradient(to right, hsl(219, 12%, 61%) 0, hsl(187, 57%, 43%) 10%, hsl(216, 91%, 25%) 20%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 5s infinite linear;
-  position: relative; /* Add relative positioning for the pseudo-element */
-
-}
-
-.Head1::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 4px; /* Adjust the height of the underline as needed */
-  width: 0;
-  background: aqua;
-  transition: width 0.5s ease, left 0.5s ease;
-  z-index: -1; /* Place the underline behind the text */
-  
-}
-
-.Head1:hover::after {
-  width: 100%;
-  left: 0;
-}
-
-.para1{
-  text-align: justify;
-  font-size: 18px;
- 
-}
-
-
 
 
   

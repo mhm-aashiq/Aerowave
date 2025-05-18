@@ -58,7 +58,7 @@ const OffcanvasExample = () => {
                       <div className="card card-body bg-dark">
                           {openCollapse === 'collapseExample1' && (
                               <div>
-                                <h1 className='Head2'>Customs Documentation</h1>
+                                <h1 className='Head2 text-justify'>Customs Documentation</h1>
                                   <p>We assist with all necessary paperwork to ensure your shipments comply with international regulations.</p> 
                                    
                               </div>

@@ -26,7 +26,7 @@ const Doc = () => {
       <main className="content">
         <h1 className='Head1'>AW documentation</h1>
         <div className='container'>
-          <p className='para1'>
+          <p className='para6'>
           Our documentation service is designed to simplify the shipping process for our customers. We provide comprehensive support to ensure that all necessary paperwork is accurately prepared and submitted, helping you navigate customs requirements with ease. From generating shipping labels to offering guidance on international documentation standards, our team is here to assist you every step of the way. With our user-friendly resources and dedicated customer support, you can ship with confidence, knowing that your documentation needs are in expert hands.          </p>
 
           <div className='row'>
@@ -38,17 +38,18 @@ const Doc = () => {
               </section>
             </div>
 
-            <div className='col-lg-5 col-md-6 col-sm-12'>
+            <div className='col-lg-5 col-md-6 col-sm-6'>
               <ul className="services">
                 <h2>Our Services</h2>
                 <hr />
                 <div><OffcanvasExample /></div>
-              </ul>
-            </div>
+                  </ul>
           </div>
+    
+         </div>
         </div>
+      <Footer />
       </main>
-      <div className='footer'> <Footer /> </div>
     </div>
   );
 }
