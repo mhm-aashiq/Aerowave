@@ -1,6 +1,4 @@
-.fixed{
-    margin-bottom: 5%;
-}
+
 
 .background img{
     width: 100%;
@@ -121,6 +119,12 @@
 /* Tablet devices */
 @media (max-width: 768px) {
 
+      .background {
+      position: relative;
+      padding-top: 40px !important; /* Adjust based on navbar height */
+    }
+
+
     .photocut article {
         display: grid;
         grid-gap: 5px;
@@ -161,6 +165,10 @@
 
 /* Mobile devices */
 @media (max-width: 480px) {
+  .background {
+    position: relative;
+    padding-top: 60px !important; /* Adjust based on navbar height */
+  }
 
   .photocut {
     width: 100%; /* Ensure the container is full width */
@@ -215,9 +223,11 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .fixed{
-    margin-bottom: 20vh;
-  }
+ .background {
+  position: relative;
+  padding-top: 100px; /* Adjust based on navbar height */
+}
+
 
   .background img{
   width: 100%;

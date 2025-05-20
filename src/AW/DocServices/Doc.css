@@ -1,6 +1,4 @@
-.fixed{
-    margin-bottom: 5%;
-}
+
 
 .background img{
   width: 100%;
@@ -141,9 +139,7 @@
 /* Mobile devices */
 @media (max-width: 480px) {
 
-    .fixed{
-      margin-bottom: 10vh;
-    }
+   
     .photocut {
       width: 100%; /* Ensure the container is full width */
       position: relative; /* Ensure proper positioning */

@@ -13,9 +13,9 @@ const SeaFreight = () => {
 
   return (
     <div>
-      <div className='fixed'>
+      
         <Navbar />
-      </div>
+      
 
       <div className='background'>
         <img src={BackgroundImg} alt='Flight Background' />

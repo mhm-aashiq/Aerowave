@@ -18,6 +18,7 @@ const AboutUs = () => {
     const Ilham = require('../img/Ilham.jpg');
     const Map = require('../img/map.jpg');
     const Map1 = require('../img/map1.jpg');
+    const Grp = require('../img/backgorund.jpg');
 
     
 
@@ -38,7 +39,7 @@ const AboutUs = () => {
         
             const titles = ["Welcome to AEROWAVE PVT LTD", "Seamless Solutions for Every Challenge", "Empowering Businesses Worldwide"];
             const subtitles = ["Partner with us for seamless logistics solutions that drive your business forward.", "No matter the complexity, our team is here to provide you with solutions that work.", "Our innovative shipping solutions are designed to enhance your supply chain and support your growth."];
-            const backgroundImages = [Map1,Map]; // Update with your image filenames
+            const backgroundImages = [Map1,Map,Grp]; // Update with your image filenames
     
             const randomIndex = getRandomNumber(0, titles.length - 1);
     
@@ -60,9 +61,9 @@ const AboutUs = () => {
 
     return (
         <div>
-            <div className='fixed'>
+            
             <Navbar />
-            </div>
+          
         <div className='background'>
             <section className="hero" style={{ backgroundImage: `url(${heroContent.backgroundImage})` , width:'100%' }}>
                 <div className="hero-content" >

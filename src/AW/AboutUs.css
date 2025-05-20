@@ -1,6 +1,4 @@
-.fixed{
-    margin-bottom: 5%;
-}
+
 .col-lg-4 {
     padding: 20px;
     margin: 20px auto;
@@ -40,11 +38,9 @@
 @media (max-width: 480px) {
     .col-sm-12 .team-member img {
         width: 55%;
-        height: 200px;  
+        height: 175px;  
     }
-    .fixed{
-        margin-bottom: 15%;
-    }
+    
     .hero {
         position: relative; 
         width: 100%;

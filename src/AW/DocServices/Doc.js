@@ -11,9 +11,9 @@ const containership = require('../../img/portloading.png');
 const Doc = () => {
   return (
     <div>
-      <div className='fixed'>
+ 
         <Navbar />
-      </div>
+    
       <div className='background'>
         <img src={BackgroundImg} alt='Flight Background' />
         <div className='overlay-text'>

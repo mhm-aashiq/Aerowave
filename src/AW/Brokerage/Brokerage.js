@@ -10,9 +10,9 @@ const brokerage = require('../../img/brokerage.jpeg');
 const Brokerage = () => {
   return (
     <div>
-      <div className='fixed'>
+      
         <Navbar />
-      </div>
+     
       <div className='background'>
         <img src={BackgroundImg} alt='Flight Background' />
         <div className='overlay-text'>

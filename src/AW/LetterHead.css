@@ -14,7 +14,7 @@
   -webkit-text-stroke: 1px var(--stroke-color);
   cursor: pointer;
   text-align: center;
-  padding: 10px 20px; /* Add padding for better touch target */
+  padding: 10px 20px; 
 }
 
 .front-text {

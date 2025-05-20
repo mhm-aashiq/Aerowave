@@ -10,7 +10,7 @@ const ExpCargo = require('../../img/exp.png');
 const AirFreight = () => {
   return (
     <div>
-      <div className='fixed'>
+      <div className=''>
         <Navbar />
       </div>
       <div className='background'>
