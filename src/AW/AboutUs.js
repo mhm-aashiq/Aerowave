@@ -10,7 +10,6 @@ import { Link } from 'react-router-dom';
 const AboutUs = () => {
     const CEO = require('../img/Atheeq.jpg');
     const Gayan = require('../img/Gayan.jpg');
-
     const Sajad = require('../img/Sajad.jpg');
     const Althaf = require('../img/Althaf.jpg');
     const Avatar = require('../img/avatar.png');

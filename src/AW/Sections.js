@@ -8,6 +8,13 @@ const Sections = () => {
 	const Exports = require('../img/exports.jpg')
 	const TS = require('../img/tranship1.jpg')
 	const Files = require('../img/office.jpg')
+	const Atheeq = require('../img/Atheeq.jpg')
+	const Gayan = require('../img/Gayan.jpg');
+    const Sajad = require('../img/Sajad.jpg');
+    const Althaf = require('../img/Althaf.jpg');
+    const Avatar = require('../img/avatar.png');
+    const Jasim = require('../img/Jasim.png');
+    const Ilham = require('../img/Ilham.jpg');
   return (
     
         <div className="wrapper">
@@ -36,9 +43,9 @@ const Sections = () => {
 			<div className="cast">
 				<h3>Cast</h3>
 				<ul>
-					<li><img src="https://i.postimg.cc/jqgkqhSb/cast-11.jpg" alt="Marco Andrews" title="Marco Andrews" /></li>
-					<li><img src="https://i.postimg.cc/8P7X7r7r/cast-12.jpg" alt="Rebecca Floyd" title="Rebecca Floyd" /></li>
-					<li><img src="https://i.postimg.cc/2SvHwRFk/cast-13.jpg" alt="Antonio Herrera" title="Antonio Herrera" /></li>
+					<li><img src={Atheeq} alt="Mohammed Atheeq" title="CEO" /></li>
+					<li><img src={Ilham} alt="Ilham" title="Staff" /></li>
+					<li><img src={Avatar} alt="Hussein Rasheed" title="Staff" /></li>
 				</ul>
 			</div>
 		</div>
@@ -66,8 +73,9 @@ const Sections = () => {
 			<div className="cast">
 				<h3>Cast</h3>
 				<ul>
-					<li><img src="https://i.postimg.cc/yY2QcYRp/cast-21.jpg" alt="Angelina Whyte" title="Angelina Whyte" /></li>
-					<li><img src="https://i.postimg.cc/R0BgpsXc/cast-22.jpg" alt="Ivan Benson" title="Ivan Benson" /></li>
+					<li><img src={Atheeq} alt="Mohammed Atheeq" title="CEO" /></li>
+					<li><img src={Ilham} alt="Ilham" title="Staff" /></li>
+					<li><img src={Sajad} alt="Sajad" title="Staff" /></li>
 				</ul>
 			</div>
 		</div>
@@ -95,8 +103,9 @@ const Sections = () => {
 			<div className="cast">
 				<h3>Cast</h3>
 				<ul>
-					<li><img src="https://i.postimg.cc/xd3twv4B/cast-31.jpg" alt="Jessica Enduro" title="Jessica Enduro" /></li>
-					<li><img src="https://i.postimg.cc/C1MmSZy5/cast-32.jpg" alt="Charles Garcia" title="Charles Garcia" /></li>
+					<li><img src={Althaf} alt="Mohammed Althaf" title="Staff" /></li>
+					<li><img src={Gayan} alt="Gayan" title="Staff" /></li>
+					<li><img src={Avatar} alt="Hussein Rasheed" title="Staff" /></li>
 				</ul>
 			</div>
 		</div>
@@ -124,10 +133,9 @@ const Sections = () => {
 			<div className="cast">
 				<h3>Cast</h3>
 				<ul>
-					<li><img src="https://i.postimg.cc/jqgkqhSb/cast-11.jpg" alt="Marco Andrews" title="Marco Andrews" /></li>
-					<li><img src="https://i.postimg.cc/8P7X7r7r/cast-12.jpg" alt="Rebecca Floyd" title="Rebecca Floyd" /></li>
-					<li><img src="https://i.postimg.cc/2SvHwRFk/cast-13.jpg
-" alt="Antonio Herrera" title="Antonio Herrera" /></li>
+					<li><img src={Atheeq} alt="Mohammed Atheeq" title="CEO" /></li>
+					<li><img src={Ilham} alt="Ilham" title="Staff" /></li>
+					<li><img src={Althaf} alt="Mohammed Althaf" title="Staff" /></li>
 				</ul>
 			</div>
 		</div>
@@ -156,8 +164,8 @@ const Sections = () => {
 			<div className="cast">
 				<h3>Cast</h3>
 				<ul>
-					<li><img src="https://i.postimg.cc/yY2QcYRp/cast-21.jpg" alt="Angelina Whyte" title="Angelina Whyte" /></li>
-					<li><img src="https://i.postimg.cc/R0BgpsXc/cast-22.jpg" alt="Ivan Benson" title="Ivan Benson" /></li>
+					<li><img src={Atheeq} alt="Mohammed Atheeq" title="CEO" /></li>
+					<li><img src={Ilham} alt="Ilham" title="Staff" /></li>
 				</ul>
 			</div>
 		</div>
@@ -186,8 +194,8 @@ const Sections = () => {
 			<div className="cast">
 				<h3>Cast</h3>
 				<ul>
-					<li><img src="https://i.postimg.cc/xd3twv4B/cast-31.jpg" alt="Jessica Enduro" title="Jessica Enduro" /></li>
-					<li><img src="https://i.postimg.cc/C1MmSZy5/cast-32.jpg" alt="Charles Garcia" title="Charles Garcia" /></li>
+					<li><img src={Ilham} alt="Ilham" title="Staff" /></li>
+					<li><img src={Sajad} alt="Sajad" title="Staff" /></li>
 				</ul>
 			</div>
 		</div>
