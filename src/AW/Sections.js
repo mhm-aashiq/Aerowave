@@ -13,7 +13,6 @@ const Sections = () => {
     const Sajad = require('../img/Sajad.jpg');
     const Althaf = require('../img/Althaf.jpg');
     const Avatar = require('../img/avatar.png');
-    const Jasim = require('../img/Jasim.png');
     const Ilham = require('../img/Ilham.jpg');
   return (
     
