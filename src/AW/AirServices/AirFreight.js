@@ -7,7 +7,6 @@ import OffcanvasExample from './OffcanvasExample';
 
 
 const AirCargo = require('../../img/AirCargo.jpg');
-const AirCargo1 = require('../../img/flight1.gif');
 
 const AirFreight = () => {
  
