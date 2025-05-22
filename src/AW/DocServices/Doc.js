@@ -31,11 +31,18 @@ const Doc = () => {
 
           <div className='row'>
             <div className='col-lg-7 col-md-6 col-sm-12'>
-              <section className='photocut'>
+              <section className='photocut_doc'>
                 <img src={containership} alt="Air Cargo" />
-                {/* <img src={flight} alt="Air Cargo" /> */}
-               
+                <article>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </article>
               </section>
+              <hr className='doc_hr1'/>
+              <hr className='doc_hr'/>
             </div>
 
             <div className='col-lg-5 col-md-6 col-sm-6'>

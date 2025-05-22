@@ -36,7 +36,7 @@ const AboutUs = () => {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         };
         
-            const titles = ["Welcome to AEROWAVE PVT LTD", "Seamless Solutions for Every Challenge", "Empowering Businesses Worldwide"];
+            const titles = ["Welcome to Aerowave Private Limited", "Seamless Solutions for Every Challenge", "Empowering Businesses Worldwide"];
             const subtitles = ["Partner with us for seamless logistics solutions that drive your business forward.", "No matter the complexity, our team is here to provide you with solutions that work.", "Our innovative shipping solutions are designed to enhance your supply chain and support your growth."];
             const backgroundImages = [Map1,Map,Grp]; // Update with your image filenames
     
@@ -81,12 +81,12 @@ const AboutUs = () => {
                 <WorldMap />
 
                 <section className="our-story">
-                    <h2>Our Story</h2>
+                    <h2>Our Mission</h2>
                     <p className='fst-italic'>Our mission is to provide reliable, efficient, and innovative logistics solutions that seamlessly connect businesses and consumers worldwide. We are dedicated to exceeding customer expectations through exceptional service, cutting-edge technology, and a commitment to sustainability.</p>
                 </section>
 
                 <section className="our-vision">
-                    <h2>Our Story</h2>
+                    <h2>Our Vision</h2>
                     <p className='fst-italic'>To be the global leader in shipping and logistics, driving the evolution of the industry with sustainable practices, unmatched customer satisfaction, and pioneering technology. We aim to shape the future of global trade by setting new standards for excellence and innovation.</p>
                 </section>
 
@@ -116,26 +116,18 @@ const AboutUs = () => {
                         <div className="team-members">
                             <div className="team-member">
                                 <img src={Jasim} alt="Mohamed Jasim" style={{ transition: 'transform 0.3s ease' }} onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'} onMouseOut={(e) => e.target.style.transform = 'scale(1)'} />
-                                <h3>Mohamed Jasim</h3>
+                                <h3>Mohammed Jasim</h3>
                                 <p>Accountant</p>
                             </div>
                         </div>
                     </div>
 
-                    <div className='col-lg-4 col-md-12 col-sm-12'>
-                        <div className="team-members">
-                            <div className="team-member">
-                                <img src={Avatar} alt="Mohamed Jasim" style={{ transition: 'transform 0.3s ease' }} onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'} onMouseOut={(e) => e.target.style.transform = 'scale(1)'} />
-                                <h3>Hussain Rasheed</h3>
-                                <p>Clearance Officer</p>
-                            </div>
-                        </div>
-                    </div>
+                  
                     <div className='col-lg-4 col-md-12 col-sm-12'>
                         <div className="team-members">
                             <div className="team-member">
                                 <img src={Sajad} alt="Mohamed sajad" style={{ transition: 'transform 0.3s ease' }} onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'} onMouseOut={(e) => e.target.style.transform = 'scale(1)'} />
-                                <h3>Mohamed sajad</h3>
+                                <h3>Mohammed Sajad</h3>
                                 <p>Documentation & Vessel handling</p>
                             </div>
                         </div>
@@ -162,9 +154,19 @@ const AboutUs = () => {
                     </div>
                 </div>
 
+                  <div className='col-lg-4 col-md-12 col-sm-12'>
+                        <div className="team-members">
+                            <div className="team-member">
+                                <img src={Avatar} alt="Mohamed Jasim" style={{ transition: 'transform 0.3s ease' }} onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'} onMouseOut={(e) => e.target.style.transform = 'scale(1)'} />
+                                <h3>Hussain Rasheed</h3>
+                                <p>Clearance Officer</p>
+                            </div>
+                        </div>
+                    </div>
+
                 <section className="contact">
                     <h2>Contact Us</h2>
-                    <p>Feel free to reach out to us at <Link href="mailto:csv@aerowavemv.com">csv@aerowavemv.com</Link> or call us at (+960) 944-2123.</p>
+                    <p>Feel free to reach out to us at <Link href="mailto:csv@aerowavemv.com">csv@aerowavemv.com</Link> or call us at (+960) 944-2123 or (+960) 944-1231.</p>
                 </section>
             </div>
             <Footer />

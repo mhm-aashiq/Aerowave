@@ -22,19 +22,33 @@
     font-size: 35px; /* Adjust font size as needed */
 }
 
-/* Base styling for .photocut */
-.photocut {
-  width: 90%;
+/* Base styling for .photocut_sea */
+.photocut_sea {
+    width: 90%;
     margin: 0 auto;
     position: relative;
+    border-top: solid #FEC972 4px;
+    border-left: solid #272E38 4px;
 }
 
-.photocut img {
+.sea_hr{
+  background-color: #FEC972 !important;
+  height: 4px !important;
+  border: none !important;
+
+}
+.sea_hr1{
+  background-color: #272E38 !important;
+  height: 4px !important;
+  border: none !important;
+}
+
+.photocut_sea img {
     width: 100%;
     height: auto; /* Maintain aspect ratio */
 }
 
-.photocut article {
+.photocut_sea article {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,7 +61,7 @@
     padding: 15px; /* Optional: Add padding for spacing */
 }
 
-.photocut div {
+.photocut_sea div {
     background: black;
     height: 22vw; /* Responsive height based on viewport width */
 }
@@ -125,24 +139,24 @@
     }
 
 
-    .photocut article {
+    .photocut_sea article {
         display: grid;
         grid-gap: 5px;
         grid-template-columns: repeat(1, 1fr); /* Ensure only 2 columns are visible */
     }
-    .photocut article div:nth-of-type(3),
-    .photocut article div:nth-of-type(4),
-    .photocut article div:nth-of-type(5) {
+    .photocut_sea article div:nth-of-type(3),
+    .photocut_sea article div:nth-of-type(4),
+    .photocut_sea article div:nth-of-type(5) {
         display: none; /* Hide the last 3 divs */
     }
 
 
-    .photocut img {
+    .photocut_sea img {
       width: 100%; /* Ensure the image takes full width */
       height: auto; /* Maintain aspect ratio */
     }
 
-    .photocut {
+    .photocut_sea {
       width: 100%; /* Ensure the container is full width */
     }
 
@@ -170,19 +184,19 @@
     padding-top: 60px !important; /* Adjust based on navbar height */
   }
 
-  .photocut {
+  .photocut_sea {
     width: 100%; /* Ensure the container is full width */
     position: relative; /* Ensure proper positioning */
     overflow: hidden; /* Hide any overflowing content */
   }
 
-  .photocut img {
+  .photocut_sea img {
     width: 100%; /* Ensure the image takes full width */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove any default spacing around the image */
   }
 
-  .photocut article {
+  .photocut_sea article {
     display: none; /* Hide the article containing the divs */
   }
 

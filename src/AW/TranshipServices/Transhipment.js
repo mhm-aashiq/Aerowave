@@ -33,10 +33,18 @@ const Transhipment = () => {
 
           <div className='row'>
             <div className='col-lg-7 col-md-6 col-sm-6 '>
-              <section className='photocut'>
+              <section className='photocut_trans'>
                 <img src={transshipment} alt="Air Cargo" />
-               
+                <article>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </article>
               </section>
+              <hr className='trans_hr1'/>
+              <hr className='trans_hr'/>
             </div>
 
             <div className='col-lg-5 col-md-6 col-sm-12 '>

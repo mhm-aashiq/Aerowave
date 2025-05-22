@@ -20,30 +20,42 @@
 }
 
 
-/* Base styling for .photocut */
-.photocut {
+/* Base styling for .photocut_trans */
+.photocut_trans {
   width: 90%;
   margin: 0 auto;
   position: relative;
+   border-top: solid #9FBECC 4px;
+  border-left: solid #115071 4px;
 }
 
-.photocut img {
+.photocut_trans img {
   width: 100%;
   height: auto; /* Maintain aspect ratio */
 }
 
-.photocut article {
+.photocut_trans article {
   display: none; /* Hide the article containing the divs */
 
-  
 }
 
-.photocut div {
+.photocut_trans div {
   background: black;
   height: 22vw; /* Responsive height based on viewport width */
   
 }
 
+.trans_hr{
+  background-color: #115071 !important;
+  height: 4px !important;
+  border: none !important;
+
+}
+.trans_hr1{
+  background-color: #9FBECC !important;
+  height: 4px !important;
+  border: none !important;
+}
 
 .Head1{
 
@@ -105,23 +117,23 @@
   
   }
 
-  .photocut article {
+  .photocut_trans article {
     display: none; /* Hide the article containing the divs */
 
   }
-  .photocut article div:nth-of-type(3),
-  .photocut article div:nth-of-type(4),
-  .photocut article div:nth-of-type(5) {
+  .photocut_trans article div:nth-of-type(3),
+  .photocut_trans article div:nth-of-type(4),
+  .photocut_trans article div:nth-of-type(5) {
       display: none; /* Hide the last 3 divs */
   }
 
 
-  .photocut img {
+  .photocut_trans img {
     width: 100%; /* Ensure the image takes full width */
     height: auto; /* Maintain aspect ratio */
   }
 
-  .photocut {
+  .photocut_trans {
     width: 100%; /* Ensure the container is full width */
   }
 
@@ -155,20 +167,20 @@
       background-repeat: no-repeat;
     
     }
-    .photocut {
+    .photocut_trans {
       width: 100%; /* Ensure the container is full width */
       position: relative; /* Ensure proper positioning */
       overflow: hidden; /* Hide any overflowing content */
       margin-top: -25px;
     }
 
-    .photocut img {
+    .photocut_trans img {
       width: 100%; /* Ensure the image takes full width */
       height: auto; /* Maintain aspect ratio */
       display: block; /* Remove any default spacing around the image */
     }
 
-    .photocut article {
+    .photocut_trans article {
       display: none; /* Hide the article containing the divs */
     }
 

@@ -7,6 +7,7 @@ import OffcanvasExample from './OffcanvasExample';
 
 
 const AirCargo = require('../../img/AirCargo.jpg');
+const AirCargo1 = require('../../img/flight1.gif');
 
 const AirFreight = () => {
  
@@ -33,7 +34,7 @@ const AirFreight = () => {
 
         <div className='row'>
           <div className='col-lg-7 col-md-6 col-sm-12'>
-            <section className='photocut'>
+            <section className='photocut_air'>
               <img src={AirCargo} alt="Air Cargo" />
               <article>
                 <div></div>
@@ -43,6 +44,8 @@ const AirFreight = () => {
                 <div></div>
               </article>
             </section>
+            <hr className='air_hr1'/>
+            <hr className='air_hr'/>
           </div>
 
           <div className='col-lg-4 col-md-6 col-sm-6'>

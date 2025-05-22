@@ -23,30 +23,43 @@
     font-size: 35px; /* Adjust font size as needed */
   }
 
-/* Base styling for .photocut */
-.photocut {
+/* Base styling for .photocut_exp */
+.photocut_exp {
   width: 90%;
   margin: 0 auto;
   position: relative;
+  border-top: solid #B93109 4px;
+  border-left: solid #2177A2 4px;
 }
 
-.photocut img {
+.photocut_exp img {
   width: 100%;
   height: auto; /* Maintain aspect ratio */
 }
 
-.photocut article {
+.photocut_exp article {
   display: none; /* Hide the article containing the divs */
 
   
 }
 
-.photocut div {
+.photocut_exp div {
   background: black;
   height: 22vw; /* Responsive height based on viewport width */
   
 }
 
+.exp_hr{
+  background-color: #B93109 !important;
+  height: 4px !important;
+  border: none !important;
+
+}
+.exp_hr1{
+  background-color: #2177A2 !important;
+  height: 4px !important;
+  border: none !important;
+}
 
 
 
@@ -58,23 +71,23 @@
 
  
     
-  .photocut article {
+  .photocut_exp article {
     display: none; /* Hide the article containing the divs */
 
   }
-  .photocut article div:nth-of-type(3),
-  .photocut article div:nth-of-type(4),
-  .photocut article div:nth-of-type(5) {
+  .photocut_exp article div:nth-of-type(3),
+  .photocut_exp article div:nth-of-type(4),
+  .photocut_exp article div:nth-of-type(5) {
       display: none; /* Hide the last 3 divs */
   }
 
 
-  .photocut img {
+  .photocut_exp img {
     width: 100%; /* Ensure the image takes full width */
     height: auto; /* Maintain aspect ratio */
   }
 
-  .photocut {
+  .photocut_exp {
     width: 100%; /* Ensure the container is full width */
   }
 
@@ -98,20 +111,20 @@
 /* Mobile devices */
 @media (max-width: 480px) {
 
-    .photocut {
+    .photocut_exp {
       width: 100%; /* Ensure the container is full width */
       position: relative; /* Ensure proper positioning */
       overflow: hidden; /* Hide any overflowing content */
       /* margin-top: -25px; */
     }
 
-    .photocut img {
+    .photocut_exp img {
       width: 100%; /* Ensure the image takes full width */
       height: auto; /* Maintain aspect ratio */
       display: block; /* Remove any default spacing around the image */
     }
 
-    .photocut article {
+    .photocut_exp article {
       display: none; /* Hide the article containing the divs */
     }
 

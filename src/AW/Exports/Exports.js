@@ -31,17 +31,19 @@ const AirFreight = () => {
 
           <div className='row'>
             <div className='col-lg-7 col-md-6 col-sm-12'>
-              <section className='photocut'>
+              <section className='photocut_exp'>
                 <img src={ExpCargo} alt="Air Cargo" />
-                <article>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </article>
-              </section>
-            </div>
+               <article>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </article>
+            </section>
+            <hr className='exp_hr1'/>
+            <hr className='exp_hr'/>
+          </div>
 
             <div className='col-lg-4 col-md-6 col-sm-6'>
               <ul className="services">

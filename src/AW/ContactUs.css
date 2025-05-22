@@ -4,7 +4,7 @@
   .map{
       width: 100%; 
       position: relative;
-      padding-top: 80px; /* Adjust based on navbar height */
+      padding-top: 70px !important; /* Adjust based on navbar height */
     }
 
   }
@@ -53,6 +53,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: shine 5s infinite linear;
+
+  
   }
 
  
@@ -98,11 +100,16 @@
   }
 
   .end{
-    margin-top: 30vh;
+    margin-top: 50vh;
   }
   .par{
   font-size: 15px;
-}
+  }
+  .footer{
+    margin-top: 20vh;
+  }
+
+
 }
  
   

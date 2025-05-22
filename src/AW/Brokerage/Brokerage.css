@@ -26,30 +26,44 @@
   }
 
 
-.photocut {
+.photocut_bro {
   width: 90%;
   margin: 0 auto;
   position: relative;
+   border-top: solid #40A0E3 4px;
+  border-left: solid #D7EEFE 4px;
 }
 
-.photocut img {
+.photocut_bro img {
   width: 100%;
   height: auto; /* Maintain aspect ratio */
+
 }
 
-.photocut article {
+.photocut_bro article {
   display: none; /* Hide the article containing the divs */
 
   
 }
 
-.photocut div {
+.photocut_bro div {
   background: black;
   height: 22vw; /* Responsive height based on viewport width */
   
 }
 
+.bro_hr{
+  background-color: #40A0E3 !important;
+  height: 4px !important;
+  border: none !important;
 
+}
+.bro_hr1{
+  background-color: #D7EEFE !important;
+  height: 4px !important;
+  border: none !important;
+
+}
 
 .Head1{
 
@@ -122,23 +136,23 @@
   
   }
 
-  .photocut article {
+  .photocut_bro article {
     display: none; /* Hide the article containing the divs */
 
   }
-  .photocut article div:nth-of-type(3),
-  .photocut article div:nth-of-type(4),
-  .photocut article div:nth-of-type(5) {
+  .photocut_bro article div:nth-of-type(3),
+  .photocut_bro article div:nth-of-type(4),
+  .photocut_bro article div:nth-of-type(5) {
       display: none; /* Hide the last 3 divs */
   }
 
 
-  .photocut img {
+  .photocut_bro img {
     width: 100%; /* Ensure the image takes full width */
     height: auto; /* Maintain aspect ratio */
   }
 
-  .photocut {
+  .photocut_bro {
     width: 100%; /* Ensure the container is full width */
   }
 
@@ -174,20 +188,20 @@
       background-repeat: no-repeat;
     
     }
-    .photocut {
+    .photocut_bro {
       width: 100%; /* Ensure the container is full width */
       position: relative; /* Ensure proper positioning */
       overflow: hidden; /* Hide any overflowing content */
       margin-top: -25px;
     }
 
-    .photocut img {
+    .photocut_bro img {
       width: 100%; /* Ensure the image takes full width */
       height: auto; /* Maintain aspect ratio */
       display: block; /* Remove any default spacing around the image */
     }
 
-    .photocut article {
+    .photocut_bro article {
       display: none; /* Hide the article containing the divs */
     }
 
