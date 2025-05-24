@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../Navbar';
-import BackgroundImg from '../../img/officer.jpg';
+import BackgroundImg from '../../img/ship_doc4.jpg';
 import './Doc.css';
 import Footer from '../Footer';
 import OffcanvasExample from './OffcanvasExample';
